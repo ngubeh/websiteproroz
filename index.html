@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProRoz News</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing-page" class="active-section">
+        <header class="landing-header">
+            <div class="container">
+                <div class="landing-nav">
+                    <div class="logo-container">
+                        <h1 class="logo">ProRoz</h1>
+                    </div>
+                    <button id="get-started-nav" class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="landing-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Stay Informed with ProRoz News</h1>
+            <p>Your trusted source for breaking news, in-depth analysis, and compelling stories from around the world.</p>
+            <button id="get-started-hero" class="btn btn-primary btn-large">Get Started Now</button>
+        </div>
+    </div>
+</div>
+
+        <div class="features-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose ProRoz</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Breaking News</h3>
+                        <p>Get the latest updates as events unfold around the world.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Global Coverage</h3>
+                        <p>Comprehensive reporting from every corner of the globe.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Fact-Checked</h3>
+                        <p>All our stories are thoroughly verified for accuracy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <h3>Join the Conversation</h3>
+                        <p>Comment, like, and share your thoughts on stories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>10M+</h3>
+                        <p>Monthly Readers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>News Articles</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Countries Covered</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>News Updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Our Readers Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"ProRoz has become my go-to source for reliable news. The coverage is comprehensive and unbiased."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="ladie.webp" alt="Testimonial Author">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Loyal Reader</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I appreciate the depth of reporting and analysis that ProRoz provides. It helps me understand complex global issues."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="ladie2.jpeg" alt="Testimonial Author">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p>Business Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="container">
+                <h2>Ready to Stay Informed?</h2>
+                <p>Join thousands of readers who trust ProRoz for their daily news.</p>
+                <button id="get-started-bottom" class="btn btn-primary btn-large">Get Started Now</button>
+            </div>
+        </div>
+
+        <footer class="landing-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2 class="logo">ProRoz</h2>
+                        <p>Your Source for Latest News</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 ProRoz. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Auth Section -->
+    <section id="auth-section" class="hidden">
+        <div class="auth-container">
+            <div class="logo-container">
+                <h1 class="logo">ProRoz</h1>
+                <p class="tagline">Your Source for Latest News</p>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="signup">Sign Up</button>
+            </div>
+            
+            <div class="auth-form-container">
+                <form id="login-form" class="auth-form active">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <div class="form-group remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <p class="form-footer">Forgot password? <a href="#">Reset</a></p>
+                </form>
+                
+                <form id="signup-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <p class="form-footer">By signing up, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+                </form>
+                
+                <div id="signup-success" class="auth-message hidden">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Registration Successful!</h3>
+                    <p>Your account has been created. Please login to continue.</p>
+                    <button id="goto-login" class="btn btn-primary">Go to Login</button>
+                </div>
+            </div>
+            
+            <div class="back-to-landing">
+                <a href="#" id="back-to-landing-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main App Section -->
+    <div id="app" class="hidden">
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <h1 class="logo">ProRoz</h1>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                        <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                        <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <span id="user-name">User</span>
+                    <button id="logout-btn" class="btn btn-outline">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Home Page -->
+            <section id="home-page" class="page active-page">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h2>Latest Breaking News</h2>
+                        <p>Stay informed with the most recent updates from around the world.</p>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Top Stories</h2>
+                        <div class="filter-options">
+                            <button class="filter-btn active" data-category="all">All</button>
+                            <button class="filter-btn" data-category="politics">Politics</button>
+                            <button class="filter-btn" data-category="technology">Technology</button>
+                            <button class="filter-btn" data-category="sports">Sports</button>
+                        </div>
+                    </div>
+                    
+                    <div class="news-grid" id="news-container">
+                        <!-- News articles will be loaded here via JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article Page -->
+            <section id="article-page" class="page">
+                <div class="container">
+                    <div class="article-container">
+                        <div class="article-header">
+                            <button class="btn btn-back" id="back-to-news"><i class="fas fa-arrow-left"></i> Back to News</button>
+                            <div class="article-meta">
+                                <span class="article-category" id="article-category">Category</span>
+                                <span class="article-date" id="article-date">Date</span>
+                            </div>
+                            <h1 id="article-title">Article Title</h1>
+                            <div class="article-author">
+                                <img src="climatejpeg.jpeg" alt="Author" class="author-img">
+                                <span id="article-author">Author Name</span>
+                            </div>
+                        </div>
+                        
+                        <div class="article-content">
+                            <img id="article-image" src="/placeholder.svg?height=400&width=800" alt="Article Image" class="article-main-img">
+                            <div id="article-body">
+                                <!-- Article content will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <div class="article-actions">
+                            <div class="like-actions">
+                                <button class="action-btn" id="like-btn">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <span id="like-count">0</span>
+                                </button>
+                                <button class="action-btn" id="dislike-btn">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span id="dislike-count">0</span>
+                                </button>
+                            </div>
+                            <div class="share-actions">
+                                <button class="action-btn"><i class="fab fa-facebook"></i></button>
+                                <button class="action-btn"><i class="fab fa-twitter"></i></button>
+                                <button class="action-btn"><i class="fab fa-linkedin"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="comments-section">
+                            <h3>Comments (<span id="comment-count">0</span>)</h3>
+                            <form id="comment-form">
+                                <textarea id="comment-input" placeholder="Add a comment..."></textarea>
+                                <button type="submit" class="btn btn-primary">Post Comment</button>
+                            </form>
+                            <div id="comments-container">
+                                <!-- Comments will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Page -->
+            <section id="about-page" class="page">
+                <div class="container">
+                    <div class="about-container">
+                        <h2>About ProRoz</h2>
+                        <div class="about-content">
+                            <div class="about-image">
+                                <img src="proroz.webp" alt="ProRoz Office">
+                            </div>
+                            <div class="about-text">
+                                <h3>Our Mission</h3>
+                                <p>At ProRoz, we believe in delivering accurate, timely, and unbiased news to our readers. Our mission is to inform, educate, and empower our audience with knowledge that matters.</p>
+                                
+                                <h3>Our Story</h3>
+                                <p>Founded in 2023, ProRoz started as a small team of passionate journalists committed to quality reporting. Today, we've grown into a trusted source of news for millions of readers worldwide.</p>
+                                
+                                <h3>Our Values</h3>
+                                <ul>
+                                    <li><strong>Accuracy:</strong> We verify facts before publishing.</li>
+                                    <li><strong>Integrity:</strong> We maintain ethical standards in our reporting.</li>
+                                    <li><strong>Independence:</strong> We remain free from external influence.</li>
+                                    <li><strong>Transparency:</strong> We are open about our sources and methods.</li>
+                                </ul>
+                                
+                                <h3>Our Team</h3>
+                                <p>Our diverse team of journalists, editors, and fact-checkers work tirelessly to bring you the most important stories from around the globe.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="team-section">
+                            <h3>Leadership</h3>
+                            <div class="team-grid">
+                                <div class="team-member">
+                                    <img src="raj.jpg" alt="Team Member">
+                                    <h4>Rajveer Xavier</h4>
+                                    <p>Editor-in-Chief</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="john.jpg" alt="Team Member">
+                                    <h4>John Smith</h4>
+                                    <p>Managing Editor</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="emily.jpeg" alt="Team Member">
+                                    <h4>Emily Johnson</h4>
+                                    <p>Head of Digital</p>
+                                </div>
+                                <div class="team-member">
+                                    <img src="brown.jpeg" alt="Team Member">
+                                    <h4>Michael Brown</h4>
+                                    <p>Chief Correspondent</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Page -->
+            <section id="contact-page" class="page">
+                <div class="container">
+                    <div class="contact-container">
+                        <h2>Contact Us</h2>
+                        <div class="contact-content">
+                            <div class="contact-info">
+                                <h3>Get in Touch</h3>
+                                <p>Have a question, feedback, or a news tip? We'd love to hear from you.</p>
+                                
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <h4>Address</h4>
+                                            <p>North West region Cameroon<br>Bamenda bambili</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <div>
+                                            <h4>Phone</h4>
+                                            <p>+237 673 914 542</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h4>Email</h4>
+                                            <p>proroznews@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-form-container">
+                                <h3>Send Us a Message</h3>
+                                <form id="contact-form">
+                                    <div class="form-group">
+                                        <label for="contact-name">Name</label>
+                                        <input type="text" id="contact-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-email">Email</label>
+                                        <input type="email" id="contact-email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-subject">Subject</label>
+                                        <input type="text" id="contact-subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-message">Message</label>
+                                        <textarea id="contact-message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <h2 class="logo">ProRoz</h2>
+                        <p>Your Source for Latest News</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>Categories</h3>
+                            <ul>
+                                <li><a href="#">Politics</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Entertainment</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#" data-page="about">About Us</a></li>
+                                <li><a href="#" data-page="contact">Contact</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Advertise</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Legal</h3>
+                            <ul>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">GDPR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 ProRoz. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
